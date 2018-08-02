@@ -15,14 +15,13 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   height: 30rem;
+  padding-top: 1rem;
 }
 
 .container header {
   display: flex;
   background-color: cadetblue;
   color: white;
-  position: relative;
-  top: 1rem;
   padding: 1rem 2rem;
 }
 
@@ -49,9 +48,8 @@ a {
 .message {
   display: flex;
   justify-content: flex-end;
-  position: relative;
-  top: 10rem;
-  left: 2rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
 }
 
 .message p {
@@ -126,4 +124,22 @@ a {
 .black-logo img {
   height: 1.5rem;
   padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1080px) {
+  .banner {
+    height: 22rem;
+    padding-top: 0rem;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .message {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  .message p {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem
+  }
 }
