@@ -45,6 +45,10 @@ a {
   color: white;
 }
 
+.menu {
+  display: none;
+}
+
 .message {
   display: flex;
   justify-content: flex-end;
@@ -142,4 +146,93 @@ a {
     padding: 0.75rem 4rem;
     font-size: 1.33rem
   }
+}
+
+@media only screen and (max-width: 770px){
+  .banner {
+    background-position: 30%;
+  }
+  .message {
+    margin-right: 6rem;
+  }
+  .message p {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 580px) {
+ ul li {
+   display: none;
+ }
+ .menu {
+   display: flex;
+   justify-content: flex-end;
+ }
+ .container {
+   width: 100%;
+ }
+ .banner {
+   background-position: 20%;
+   height: 17rem;
+ }
+.message {
+  display: block;
+   width: 100%;
+   margin-top: 9rem;
+ }
+ .message p {
+   font-size: 1rem;
+   padding: 0.75rem 0;
+   text-align: center;
+ }
+ .services {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   margin: 3rem auto;
+ }
+ .service {
+   justify-content: center;
+   height: auto;
+   margin: 0.77rem;
+   padding: 0;
+ }
+ .service-image {
+   margin: 0.77rem;
+ }
+ .service-title {
+   0.77rem;
+ }
+ .company-info {
+   display: flex;
+   flex-direction: column;
+ }
+ .info {
+   display: block;
+   width: 100%;
+   padding: 0;
+ }
+ .title {
+   text-align: center;
+   width: 100%;
+ }
+ .description {
+   margin: 1rem 0 4rem 0;
+   padding: 0;
+   font-size: 0.77rem;
+ }
+
+ .black-logo {
+   display: flex;
+  justify-content: center;
+   width: 100%;
+ }
+ .black-logo span {
+   display: none;
+ }
+ .black-logo img {
+   justify-content: center;
+ }
 }
